@@ -12,62 +12,66 @@
     </header>
     <main>
         <div class="container">
-            <div class="col">
-                <h2>Konversi Suhu Celsius ke Fahrenheit</h2>
-                <div class="row">
-                    <div class="suhu celsius">
-                        <h3>Celsius</h3>
-                        <input type="text" inputmode="numeric" required>
+            <form action="">
+                <div class="col">
+                    <h2>Konversi Suhu Celsius ke Fahrenheit</h2>
+                    <div class="row">
+                        <div class="suhu celsius">
+                            <h4>Celsius (&deg;C)</h4>
+                            <input type="number" name="inputC" id="inputC" inputmode="numeric" alt="Input Suhu Celsius" required>
+                        </div>
+                        <div class="suhu fahrenheit">
+                            <h4>Fahrenheit (&deg;F)</h4>
+                            <input type="number" name="inputF" id="inputF" inputmode="numeric" alt="Input Suhu Fahrenheit" required>
+                        </div>
                     </div>
-                    <div class="suhu fahrenheit">
-                        <h3>Fahrenheit</h3>
-                        <input type="text" inputmode="numeric" required>
+                    <div>
+                        <div class="suhu kalkulasi">
+                            <h4>Cara Kalkulasi</h4>
+                            <input type="text" id="calcMethod" alt="Cara Kalkulasi" disabled>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="convertToFahrenheit()" alt="Tombol Konversi">Konversi</button>
+                        <button onclick="reset()" alt="Tombol Reset">Reset</button>
+                        <button onclick="reverse()" alt="Tombol Reverse">Reverse</button>
+                    </div>
+                    <div alt="Link Reverse"><a href="">Fahrenheit ke Celsius</a></div>
+                    <div>
+                        <h4>Cara Konversi Dari Celsius ke Fahrenheit</h4>
+                        <p alt="Cara Konversi Dari Celsius ke Fahrenheit"></p>
+                    </div>
+                </div> 
+                <div class="col reverse">
+                    <h2>Konversi Suhu Fahrenheit ke Celsius</h2>
+                    <div class="row">
+                        <div class="suhu fahrenheit">
+                            <h4>Fahrenheit (&deg;F)</h4>
+                            <input type="number" name="inputF" id="inputF" inputmode="numeric" alt="Input Suhu Fahrenheit" required>
+                        </div>
+                        <div class="suhu celsius">
+                            <h4>Celsius (&deg;C)</h4>
+                            <input type="number" name="inputC" id="inputC" inputmode="numeric" alt="Input Suhu Celsius" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="suhu kalkulasi">
+                            <h4>Cara Kalkulasi</h4>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="convertToCelsius()">Konversi</button>
+                        <button onclick="reset()">Reset</button>
+                        <button onclick="reverse()">Reverse</button>
+                    </div>
+                    <a href="">Celsius ke Fahrenheit</a>
+                    <div>
+                        <h4>Cara Konversi Dari Fahrenheit ke Celsius</h4>
+                        <p></p>
                     </div>
                 </div>
-                <div>
-                    <div class="suhu kalkulasi">
-                        <h3>Cara Kalkulasi</h3>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-                <div>
-                    <button>Konversi</button>
-                    <button>Reset</button>
-                    <button>Reverse</button>
-                </div>
-                <a href="">Fahrenheit ke Celsius</a>
-                <div>
-                    <h4>Cara Konversi Dari Celsius ke Fahrenheit</h4>
-                    <p></p>
-                </div>
-            </div> 
-            <div class="col reverse">
-                <h2>Konversi Suhu Fahrenheit ke Celsius</h2>
-                <div class="row">
-                    <div class="suhu fahrenheit">
-    
-                    </div>
-                    <div class="suhu celsius">
-        
-                    </div>
-                </div>
-                <div>
-                    <div class="suhu kalkulasi">
-                        <h3>Cara Kalkulasi</h3>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-                <div>
-                    <button>Konversi</button>
-                    <button>Reset</button>
-                    <button>Reverse</button>
-                </div>
-                <a href="">Celsius ke Fahrenheit</a>
-                <div>
-                    <h4>Cara Konversi Dari Fahrenheit ke Celsius</h4>
-                    <p></p>
-                </div>
-            </div>
+            </form>
         </div>
     </main>
     <footer>
@@ -76,5 +80,6 @@
            | All Right Reserved
         </p>
     </footer>
+    <script src="/js/script.js"></script>
 </body>
 </html>

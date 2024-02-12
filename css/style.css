@@ -8,23 +8,76 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    background-color: lightblue;
 }
+
+h1, h2, h3, h4, h5 {
+    margin: 5px 0;
+}
+
 header {
-    padding: 0 20px;
+    padding: 10px 20px;
+    text-align: center;
 }
+
+header > h1 {
+    width: 320px;
+}
+
 .container {
-    border: 2px solid black;
-    margin: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0 20px;
     padding: 10px 30px;
-    width: inherit;
+    min-height: 100vh;
 }
+
 .col {
     display: flex;
     flex-direction: column;
     width: inherit;
+    gap: 15px;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
+.reverse {
+    display: none;
+}
+
+.suhu {
+    width: 100%;
+}
+
+.suhu > input {
+    text-decoration: none;
+    width: 100%;
+    min-height: 28px;
+}
+
+footer {
+    bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 600px;
+    }
+    header > h1 {
+        width: 700px;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        column-gap: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 900px;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
 }
