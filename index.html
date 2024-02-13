@@ -12,73 +12,8 @@
         <h1 class="col reverse">Konversi Suhu Fahrenheit ke Celsius</h1>
     </header>
     <main>
-        <div class="container">
-            <div class="col">
-                <a class="emoji">😐</a>
-                <div class="row">
-                    <div class="suhu celsius">
-                        <h4>Celsius (&deg;C)</h4>
-                        <textarea onclick="restart()" oninput="validateInput(this)" type="number" name="inputC" id="inputC" alt="Input Suhu Celsius" required></textarea>
-                    </div>
-                    <div class="suhu fahrenheit">
-                        <h4>Fahrenheit (&deg;F)</h4>
-                        <textarea type="number" name="outputF" id="outputF" alt="Output Suhu Fahrenheit" required readonly></textarea>
-                    </div>
-                </div>
-                <div>
-                    <div class="suhu kalkulasi">
-                        <h4>Cara Kalkulasi</h4>
-                        <textarea type="text" id="calcMethod" alt="Cara Kalkulasi" readonly></textarea>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button class="b-kon" onclick="convertToFahrenheit()">Konversi</button>
-                    <button class="b-res" onclick="reset()">Reset</button>
-                    <button class="b-rev" onclick="reverse()">Reverse</button>
-                </div>
-                <div class="link" alt="Link Reverse"><a onclick="reverse()">Fahrenheit ke Celsius</a></div>
-                <div>
-                    <h2>Cara Konversi Dari Celsius ke Fahrenheit</h2>
-                    <p alt="Cara Konversi Dari Celsius ke Fahrenheit">
-                        <p>Suhu <span class="math"><i>S</i></span> dalam derajat Fahrenheit (°F) sama dengan suhu <span class="math"><i>S</i></span> dalam derajat Celsius (°C) kali <span class="math">9/5</span> tambah <span class="math">32</span>.</p>
-                        <p><span class="math"><i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> × 9/5) + 32</span></p>
-                        <p>atau</p>
-                        <p><span class="math"><i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> × 1.8) + 32</span></p>
-                    </p>
-                </div>
-            </div> 
-            <div class="col reverse">
-                <a class="emoji">😐</a>
-                <div class="row">
-                    <div class="suhu fahrenheit">
-                        <h4>Fahrenheit (&deg;F)</h4>
-                        <textarea onclick="restart()" type="number" oninput="validateInput(this)" name="inputF" id="inputF" inputmode="numeric" alt="Input Suhu Fahrenheit" required></textarea>
-                    </div>
-                    <div class="suhu celsius">
-                        <h4>Celsius (&deg;C)</h4>
-                        <textarea type="number" name="outputC" id="outputC" inputmode="numeric" alt="Output Suhu Celsius" required readonly></textarea>
-                    </div>
-                </div>
-                <div>
-                    <div class="suhu kalkulasi">
-                        <h4>Cara Kalkulasi</h4>
-                        <textarea type="text" id="calcMethod2" alt="Cara Kalkulasi" readonly></textarea>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button class="b-kon" onclick="convertToCelsius()">Konversi</button>
-                    <button class="b-res" onclick="reset()">Reset</button>
-                    <button class="b-rev" onclick="reverse()">Reverse</button>
-                </div>
-                <div class="link" alt="Link Reverse"><a onclick="reverse()">Celsius ke Fahrenheit</a></div>
-                <div>
-                    <h2>Cara Konversi Dari Fahrenheit ke Celsius</h2>
-                    <p alt="Cara Konversi Dari Fahrenheit ke Celsius">
-                        <p>Suhu <span class="math"><i>S</i></span> dalam derajat Celsius (°C) sama dengan suhu <span class="math"><i>S</i></span> dalam derajat Fahrenheit (°F) kali <span class="math">5/9</span>.</p>
-                        <span class="math"><i>S</i><sub>(°C)</sub> = (<i>S</i><sub>(°F)</sub> - 32) × 5/9</span>
-                    </p>
-                </div>
-            </div>
+        <div class="container" id="container">
+            
         </div>
     </main>
     <footer>
