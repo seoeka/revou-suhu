@@ -4,6 +4,8 @@ function createTemperatureConverter(parentId, isCelsiusToFar) {
   const inputLabel = isCelsiusToFar ? "Celsius (&deg;C)" : "Fahrenheit (&deg;F)";
   const outputLabel = isCelsiusToFar ? "Fahrenheit (&deg;F)" : "Celsius (&deg;C)";
   
+  const idInput = isCelsiusToFar ? "inputC" : "inputF";
+  const idOutput = isCelsiusToFar ? "outputF" : "outputC";
   const colClass = isCelsiusToFar ? "" : " reverse";
   const calcMethodId = isCelsiusToFar ? "calcMethod" : "calcMethod2";
   const convertFunction = isCelsiusToFar ? "convertToFahrenheit" : "convertToCelsius";
@@ -14,11 +16,11 @@ function createTemperatureConverter(parentId, isCelsiusToFar) {
           <div class="row">
               <div class="suhu celsius">
                   <h4>${inputLabel}</h4>
-                  <textarea onclick="restart()" oninput="validateInput(this)" type="number" name="inputC" id="inputC" alt="Input Suhu Celsius" required></textarea>
+                  <textarea onclick="restart()" oninput="validateInput(this)" type="number" id="${idInput}" alt="Input Suhu Celsius" required></textarea>
               </div>
               <div class="suhu fahrenheit">
                   <h4>${outputLabel}</h4>
-                  <textarea type="number" name="outputF" id="outputF" alt="Output Suhu Fahrenheit" required readonly></textarea>
+                  <textarea type="number" id="${idOutput}" alt="Output Suhu Fahrenheit" required readonly></textarea>
               </div>
           </div>
           <div>
