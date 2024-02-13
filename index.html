@@ -8,37 +8,37 @@
 </head>
 <body>
     <header>
-        <h1>Selamat Datang! Yuk Konversi Suhu!</h1>
+        <h1 class="col">Konversi Suhu Celsius ke Fahrenheit</h1>
+        <h1 class="col reverse">Konversi Suhu Fahrenheit ke Celsius</h1>
     </header>
     <main>
         <div class="container">
             <div class="col">
-                <h2>Konversi Suhu Celsius ke Fahrenheit</h2>
                 <a class="emoji">😐</a>
                 <div class="row">
                     <div class="suhu celsius">
                         <h4>Celsius (&deg;C)</h4>
-                        <input onclick="restart()" oninput="validateInput(this)" type="number" name="inputC" id="inputC" inputmode="numeric" alt="Input Suhu Celsius" required>
+                        <textarea onclick="restart()" oninput="validateInput(this)" type="number" name="inputC" id="inputC" alt="Input Suhu Celsius" required></textarea>
                     </div>
                     <div class="suhu fahrenheit">
                         <h4>Fahrenheit (&deg;F)</h4>
-                        <input type="number" name="outputF" id="outputF" inputmode="numeric" alt="Output Suhu Fahrenheit" required readonly>
+                        <textarea type="number" name="outputF" id="outputF" alt="Output Suhu Fahrenheit" required readonly></textarea>
                     </div>
                 </div>
                 <div>
                     <div class="suhu kalkulasi">
                         <h4>Cara Kalkulasi</h4>
-                        <input type="text" id="calcMethod" alt="Cara Kalkulasi" readonly>
+                        <textarea type="text" id="calcMethod" alt="Cara Kalkulasi" readonly></textarea>
                     </div>
                 </div>
                 <div class="buttons">
-                    <button onclick="convertToFahrenheit()" alt="Tombol Konversi">Konversi</button>
-                    <button onclick="reset()" alt="Tombol Reset">Reset</button>
-                    <button onclick="reverse()" alt="Tombol Reverse">Reverse</button>
+                    <button class="b-kon" onclick="convertToFahrenheit()">Konversi</button>
+                    <button class="b-res" onclick="reset()">Reset</button>
+                    <button class="b-rev" onclick="reverse()">Reverse</button>
                 </div>
                 <div class="link" alt="Link Reverse"><a onclick="reverse()">Fahrenheit ke Celsius</a></div>
                 <div>
-                    <h4>Cara Konversi Dari Celsius ke Fahrenheit</h4>
+                    <h2>Cara Konversi Dari Celsius ke Fahrenheit</h2>
                     <p alt="Cara Konversi Dari Celsius ke Fahrenheit">
                         <p>Suhu <span class="math"><i>S</i></span> dalam derajat Fahrenheit (°F) sama dengan suhu <span class="math"><i>S</i></span> dalam derajat Celsius (°C) kali <span class="math">9/5</span> tambah <span class="math">32</span>.</p>
                         <p><span class="math"><i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> × 9/5) + 32</span></p>
@@ -48,31 +48,31 @@
                 </div>
             </div> 
             <div class="col reverse">
-                <h2>Konversi Suhu Fahrenheit ke Celsius</h2>
+                <a class="emoji">😐</a>
                 <div class="row">
                     <div class="suhu fahrenheit">
                         <h4>Fahrenheit (&deg;F)</h4>
-                        <input onclick="restart()" type="number" oninput="validateInput(this)" name="inputF" id="inputF" inputmode="numeric" alt="Input Suhu Fahrenheit" required>
+                        <textarea onclick="restart()" type="number" oninput="validateInput(this)" name="inputF" id="inputF" inputmode="numeric" alt="Input Suhu Fahrenheit" required></textarea>
                     </div>
                     <div class="suhu celsius">
                         <h4>Celsius (&deg;C)</h4>
-                        <input type="number" name="outputC" id="outputC" inputmode="numeric" alt="Output Suhu Celsius" required readonly>
+                        <textarea type="number" name="outputC" id="outputC" inputmode="numeric" alt="Output Suhu Celsius" required readonly></textarea>
                     </div>
                 </div>
                 <div>
                     <div class="suhu kalkulasi">
                         <h4>Cara Kalkulasi</h4>
-                        <input type="text" id="calcMethod2" alt="Cara Kalkulasi" readonly>
+                        <textarea type="text" id="calcMethod2" alt="Cara Kalkulasi" readonly></textarea>
                     </div>
                 </div>
                 <div class="buttons">
-                    <button onclick="convertToCelsius()">Konversi</button>
-                    <button onclick="reset()">Reset</button>
-                    <button onclick="reverse()">Reverse</button>
+                    <button class="b-kon" onclick="convertToCelsius()">Konversi</button>
+                    <button class="b-res" onclick="reset()">Reset</button>
+                    <button class="b-rev" onclick="reverse()">Reverse</button>
                 </div>
                 <div class="link" alt="Link Reverse"><a onclick="reverse()">Celsius ke Fahrenheit</a></div>
                 <div>
-                    <h4>Cara Konversi Dari Fahrenheit ke Celsius</h4>
+                    <h2>Cara Konversi Dari Fahrenheit ke Celsius</h2>
                     <p alt="Cara Konversi Dari Fahrenheit ke Celsius">
                         <p>Suhu <span class="math"><i>S</i></span> dalam derajat Celsius (°C) sama dengan suhu <span class="math"><i>S</i></span> dalam derajat Fahrenheit (°F) kali <span class="math">5/9</span>.</p>
                         <span class="math"><i>S</i><sub>(°C)</sub> = (<i>S</i><sub>(°F)</sub> - 32) × 5/9</span>
@@ -83,7 +83,7 @@
     </main>
     <footer>
         <p>Copyright 2024 ©
-            <a href="https://github.com/seoeka">seoeka</a>
+            <a href="https://github.com/seoeka" style="font-weight: bold; text-decoration:none; color:crimson;" target="_blank">seoeka</a>
            | All Right Reserved
         </p>
     </footer>

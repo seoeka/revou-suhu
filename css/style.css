@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -46,15 +46,51 @@ header > h1 {
 }
 
 .emoji {
+    display: flex;
+    justify-content: center;
     font-size: 50px;
-    flex: 1;
-    text-align: center;
 }
 
 .link:hover {
     cursor: pointer;
 }
 
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.buttons > button {
+    font-weight: bold;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+    border: none;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.b-kon {
+    background-color: rgb(50, 168, 109);
+}
+.b-kon:hover {
+    background-color: rgb(31, 110, 71);
+}
+
+.b-res {
+    background-color: rgb(216, 82, 82);
+}
+.b-res:hover {
+    background-color: rgb(173, 41, 41);
+}
+
+.b-rev {
+    background-color: rgb(37, 37, 37);
+}
+.b-rev:hover {
+    background-color: rgb(0, 0, 0);
+}
 .reverse {
     display: none;
 }
@@ -63,14 +99,21 @@ header > h1 {
     width: 100%;
 }
 
-.suhu > input {
-    text-decoration: none;
+.suhu > textarea {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
     width: 100%;
-    min-height: 28px;
+    height: 5rem;
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     bottom: 0;
+    padding: 10px 20px;
 }
 
 @media (min-width: 768px) {
@@ -78,21 +121,21 @@ footer {
         width: 600px;
     }
     header > h1 {
-        width: 700px;
+        width: 600px;
     }
     .row {
         display: flex;
         flex-direction: column;
-        column-gap: 15px;
     }
 }
 
 @media (min-width: 992px) {
     .container {
-        width: 900px;
+        width: 800px;
     }
     .row {
         display: flex;
         flex-direction: row;
+        gap: 30px;
     }
 }
